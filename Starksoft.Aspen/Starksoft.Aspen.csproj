@@ -28,13 +28,14 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Starksoft.Aspen</RootNamespace>
     <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
-    <StartupObject></StartupObject>
+    <StartupObject>
+    </StartupObject>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
     <UpgradeBackupLocation>
     </UpgradeBackupLocation>
     <SignAssembly>true</SignAssembly>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <OldToolsVersion>2.0</OldToolsVersion>
     <TargetFrameworkProfile />
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">.\</SolutionDir>
@@ -100,51 +101,6 @@
   <ItemGroup>
     <Compile Include="ArrayBuilder.cs" />
     <Compile Include="ArrayUtils.cs" />
-    <Compile Include="Crc16.cs" />
-    <Compile Include="Lrc.cs" />
-    <Compile Include="Ftps\EventArgs\ConnectionClosedEventArgs.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsAsynchronousOperationException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsAuthenticationException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsBusyException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsCertificateValidationException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsCommandNotSupportedException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsCommandResponseTimeoutException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsConnectionBrokenException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsConnectionClosedException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsConnectionOpenException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsDataCompressionException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsDataConnectionException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsDataConnectionTimeoutException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsDataTransferException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsHashingInvalidAlgorithmException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsHashingServerBusyException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsItemParsingException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsNetworkVersionException.cs" />
-    <Compile Include="Ftps\FtpsFeatureArgument.cs" />
-    <Compile Include="Ftps\FtpsFeatureArgumentCollection.cs" />
-    <Compile Include="Ftps\FtpsFeature.cs" />
-    <Compile Include="Ftps\FtpsFeatureCollection.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsFeatureException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsHashingException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsLoginException.cs" />
-    <Compile Include="Ftps\EventArgs\FtpsRequestEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\FtpsResponseEventArgs.cs" />
-    <Compile Include="Ftps\Exceptions\FtpsResponseException.cs" />
-    <Compile Include="Ftps\Exceptions\FtpSecureConnectionException.cs" />
-    <Compile Include="Ftps\EventArgs\FxpCopyAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\GetDirListAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\GetDirListDeepAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\GetFileAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\OpenAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\PutFileAsyncCompletedEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\TransferCompleteEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\TransferProgressEventArgs.cs" />
-    <Compile Include="Ftps\EventArgs\ValidateServerCertificateEventArgs.cs" />
-    <Compile Include="Ftps\FtpsMlsxItem.cs" />
-    <Compile Include="Ftps\FtpsItem.cs" />
-    <Compile Include="Ftps\FtpsMlsxItemParser.cs" />
-    <Compile Include="Ftps\FtpsUtilities.cs" />
     <Compile Include="Proxy\EventArgs\CreateConnectionAsyncCompletedEventArgs.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -156,41 +112,14 @@
     <Compile Include="Proxy\Socks4ProxyClient.cs" />
     <Compile Include="Proxy\Socks5ProxyClient.cs" />
     <Compile Include="Proxy\Utils.cs" />
-    <Compile Include="Crc32.cs" />
-    <Compile Include="Ftps\FtpsBase.cs" />
-    <Compile Include="Ftps\FtpsRequest.cs" />
-    <Compile Include="Ftps\FtpsResponseCollection.cs" />
-    <Compile Include="Ftps\FtpsResponseQueue.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Ftps\FtpsClient.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Ftps\FtpsItemCollection.cs" />
-    <Compile Include="Ftps\IFtpsItemParser.cs" />
-    <Compile Include="Ftps\FtpsListItemParser.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Ftps\FtpsResponse.cs" />
-    <Compile Include="GnuPG\DecryptAsyncCompletedEventArgs.cs" />
-    <Compile Include="GnuPG\EncryptAsyncCompletedEventArgs.cs" />
-    <Compile Include="GnuPG\Gpg.cs" />
-    <Compile Include="GnuPG\GpgBadPassphraseException.cs" />
-    <Compile Include="GnuPG\GpgException.cs" />
-    <Compile Include="GnuPG\GpgKey.cs" />
-    <Compile Include="GnuPG\GpgKeyCollection.cs" />
-    <Compile Include="GnuPG\SignAsyncCompletedEventArgs.cs" />
-    <Compile Include="Smartcard\SCard.cs" />
-    <Compile Include="Smartcard\SCardAdpu.cs" />
-    <Compile Include="Smartcard\SCardAdpuRecv.cs" />
-    <Compile Include="Smartcard\SCardAdpuSend.cs" />
-    <Compile Include="Smartcard\SCardAdpuSendRecv.cs" />
-    <Compile Include="Smartcard\SCardDll.cs" />
-    <Compile Include="Smartcard\SCardException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="COPYING.LESSER" />
